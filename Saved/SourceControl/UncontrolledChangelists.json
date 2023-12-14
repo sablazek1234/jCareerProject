@@ -1,0 +1,19 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/Dustin/Documents/Unreal Projects/jCareerProject/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/Users/Dustin/Documents/Unreal Projects/jCareerProject/Content/AI/BP_Enemy.uasset",
+				"C:/Users/Dustin/Documents/Unreal Projects/jCareerProject/Content/AI/BB_Enemy.uasset",
+				"C:/Users/Dustin/Documents/Unreal Projects/jCareerProject/Content/AI/BT_Enemy.uasset",
+				"C:/Users/Dustin/Documents/Unreal Projects/jCareerProject/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/4/X6/RXNZTN9OT5AR8OR6Z69TKE.uasset",
+				"C:/Users/Dustin/Documents/Unreal Projects/jCareerProject/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/3/TT/B9K5X86ME7KJ8SY7W99B3K.uasset",
+				"C:/Users/Dustin/Documents/Unreal Projects/jCareerProject/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/5/JH/0X8OVS7BILOZXXTKHMTA7G.uasset",
+				"C:/Users/Dustin/Documents/Unreal Projects/jCareerProject/Content/Characters/Mannequins/Animations/ABP_Manny.uasset"
+			]
+		}
+	]
+}
