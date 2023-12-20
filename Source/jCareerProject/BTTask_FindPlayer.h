@@ -16,8 +16,12 @@ class JCAREERPROJECT_API UBTTask_FindPlayer : public UBTTask_BlackboardBase
 	
 public:
 	explicit UBTTask_FindPlayer(FObjectInitializer const& ObjectInitializer);
-	virtual EBTTaskNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
+	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 
 private:
-	UP
+	UPROPERTY(EditAnywhere, BluePrintReadWrite, Category = "Search", meta = (AllowPrivateAccess = "true"))
+	bool SearchRandom = false;
+
+	UPROPERTY(EditAnywhere, BluePrintReadWrite, Category = "Search", meta = (AllowPrivateAccess = "true"))
+	float SearchRadius = 150.f;
 };

@@ -3,6 +3,7 @@
 
 #include "Enemy_AIController.h"
 #include "Enemy.h"
+#include "BehaviorTree/BlackboardComponent.h"
 #include "Perception/AIPerceptionComponent.h"
 #include "Perception/AISenseConfig_Sight.h"
 #include "jCareerProjectCharacter.h"
@@ -32,7 +33,7 @@ void AEnemy_AIController::SetupPerceptionSystem()
 	SightConfig = CreateDefaultSubobject<UAISenseConfig_Sight>(TEXT("Sight Config"));
 	if (SightConfig) 
 	{
-		SetPerceptionComponent(CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("Perception Conponent")));
+		SetPerceptionComponent(*CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("Perception Conponent")));
 		SightConfig->SightRadius = 500.f;
 		SightConfig->LoseSightRadius = SightConfig->SightRadius + 25.f;
 		SightConfig->PeripheralVisionAngleDegrees = 90.f;
@@ -51,7 +52,7 @@ void AEnemy_AIController::SetupPerceptionSystem()
 
 void AEnemy_AIController::OnTargetDetected(AActor* Actor, FAIStimulus const Stimulus)
 {
-	if (auto* const ch = Cast<AjCareerProjectCharacter>(Actor));
+	if (auto* const ch = Cast<AjCareerProjectCharacter>(Actor))
 	{
 		GetBlackboardComponent()->SetValueAsBool("CanSpotPlayer", Stimulus.WasSuccessfullySensed());
 	}

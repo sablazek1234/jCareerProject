@@ -11,7 +11,10 @@
     <None Include="..\..\Source\jCareerProjectEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <None Include="..\..\.vsconfig" />
+    <None Include="..\..\README.md" />
     <None Include="..\..\UpgradeLog.htm" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -34,6 +37,12 @@
     <Filter Include="Source\jCareerProject">
       <UniqueIdentifier>{634C5114-DFF7-3421-81BF-9B3AC98132F5}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\jCareerProject\BTTask_FindPlayer.cpp">
+      <Filter>Source\jCareerProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\jCareerProject\BTTask_FindPlayer.h">
+      <Filter>Source\jCareerProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\jCareerProject\BTTask_LocationFinder.cpp">
       <Filter>Source\jCareerProject</Filter>
     </ClCompile>
