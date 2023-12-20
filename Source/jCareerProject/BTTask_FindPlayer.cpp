@@ -2,5 +2,11 @@
 
 
 #include "BTTask_FindPlayer.h"
+#include "NavigationSystem.h"
+#include "GameFramework/Character.h"
 #include "Kismet/GameplayStatics.h"
-#include "Game"
+
+UBTTask_FindPlayer::UBTTask_FindPlayer(FObjectInitializer const& ObjectInitializer)
+{
+	NodeName
+}

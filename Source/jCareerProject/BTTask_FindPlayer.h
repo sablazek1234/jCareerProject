@@ -19,5 +19,5 @@ public:
 	virtual EBTTaskNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 
 private:
-	UPROPERTY
+	UP
 };
