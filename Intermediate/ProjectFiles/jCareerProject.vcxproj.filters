@@ -37,6 +37,12 @@
     <Filter Include="Source\jCareerProject">
       <UniqueIdentifier>{634C5114-DFF7-3421-81BF-9B3AC98132F5}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\jCareerProject\BTTask_ChasePlayer.cpp">
+      <Filter>Source\jCareerProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\jCareerProject\BTTask_ChasePlayer.h">
+      <Filter>Source\jCareerProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\jCareerProject\BTTask_FindPlayer.cpp">
       <Filter>Source\jCareerProject</Filter>
     </ClCompile>

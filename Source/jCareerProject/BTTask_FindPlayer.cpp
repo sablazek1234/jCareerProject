@@ -18,6 +18,7 @@ EBTNodeResult::Type UBTTask_FindPlayer::ExecuteTask(UBehaviorTreeComponent& Owne
 	{
 		auto const PlayerLocation = Player->GetActorLocation();
 		
+		//Go to any random location
 		if (SearchRandom)
 		{
 			FNavLocation Loc;
