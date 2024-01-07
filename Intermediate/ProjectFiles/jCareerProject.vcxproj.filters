@@ -43,6 +43,12 @@
     <ClInclude Include="..\..\Source\jCareerProject\BTTask_ChasePlayer.h">
       <Filter>Source\jCareerProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\jCareerProject\BTTask_FindPathPoint.cpp">
+      <Filter>Source\jCareerProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\jCareerProject\BTTask_FindPathPoint.h">
+      <Filter>Source\jCareerProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\jCareerProject\BTTask_FindPlayer.cpp">
       <Filter>Source\jCareerProject</Filter>
     </ClCompile>
@@ -53,6 +59,12 @@
       <Filter>Source\jCareerProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\jCareerProject\BTTask_LocationFinder.h">
+      <Filter>Source\jCareerProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\jCareerProject\BTTask_PathIndex.cpp">
+      <Filter>Source\jCareerProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\jCareerProject\BTTask_PathIndex.h">
       <Filter>Source\jCareerProject</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\jCareerProject\Enemy.cpp">
@@ -86,6 +98,12 @@
       <Filter>Source\jCareerProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\jCareerProject\jCareerProjectGameMode.h">
+      <Filter>Source\jCareerProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\jCareerProject\PathForEnemy.cpp">
+      <Filter>Source\jCareerProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\jCareerProject\PathForEnemy.h">
       <Filter>Source\jCareerProject</Filter>
     </ClInclude>
   </ItemGroup>

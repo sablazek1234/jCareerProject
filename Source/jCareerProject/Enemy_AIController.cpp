@@ -30,6 +30,7 @@ void AEnemy_AIController::OnPossess(APawn* InPawn)
 
 void AEnemy_AIController::SetupPerceptionSystem()
 {
+	//Set up the Sight for the enemy
 	SightConfig = CreateDefaultSubobject<UAISenseConfig_Sight>(TEXT("Sight Config"));
 	if (SightConfig) 
 	{

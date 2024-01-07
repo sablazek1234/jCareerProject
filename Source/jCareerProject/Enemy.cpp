@@ -37,3 +37,8 @@ UBehaviorTree* AEnemy::GetBehaviorTree() const
 	return Tree;
 }
 
+APathForEnemy* AEnemy::GetPatrolPath() const
+{
+	return PatrolPath;
+}
+

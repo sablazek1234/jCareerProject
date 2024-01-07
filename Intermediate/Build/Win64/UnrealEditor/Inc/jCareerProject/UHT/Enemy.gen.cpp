@@ -13,6 +13,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemy() {}
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	JCAREERPROJECT_API UClass* Z_Construct_UClass_AEnemy();
 	JCAREERPROJECT_API UClass* Z_Construct_UClass_AEnemy_NoRegister();
+	JCAREERPROJECT_API UClass* Z_Construct_UClass_APathForEnemy_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_jCareerProject();
 // End Cross Module References
 	void AEnemy::StaticRegisterNativesAEnemy()
@@ -33,6 +34,10 @@ void EmptyLinkFunctionForGeneratedCodeEnemy() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_Tree_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_Tree;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_PatrolPath_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PatrolPath;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -56,9 +61,18 @@ void EmptyLinkFunctionForGeneratedCodeEnemy() {}
 		{ "ModuleRelativePath", "Enemy.h" },
 	};
 #endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_Tree = { "Tree", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemy, Tree), Z_Construct_UClass_UBehaviorTree_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Statics::NewProp_Tree_MetaData), Z_Construct_UClass_AEnemy_Statics::NewProp_Tree_MetaData) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_Tree = { "Tree", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemy, Tree), Z_Construct_UClass_UBehaviorTree_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Statics::NewProp_Tree_MetaData), Z_Construct_UClass_AEnemy_Statics::NewProp_Tree_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AEnemy_Statics::NewProp_PatrolPath_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "AI" },
+		{ "ModuleRelativePath", "Enemy.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AEnemy_Statics::NewProp_PatrolPath = { "PatrolPath", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AEnemy, PatrolPath), Z_Construct_UClass_APathForEnemy_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AEnemy_Statics::NewProp_PatrolPath_MetaData), Z_Construct_UClass_AEnemy_Statics::NewProp_PatrolPath_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AEnemy_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_Tree,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AEnemy_Statics::NewProp_PatrolPath,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AEnemy_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AEnemy>::IsAbstract,
@@ -98,9 +112,9 @@ void EmptyLinkFunctionForGeneratedCodeEnemy() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_Enemy_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AEnemy, AEnemy::StaticClass, TEXT("AEnemy"), &Z_Registration_Info_UClass_AEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemy), 602494329U) },
+		{ Z_Construct_UClass_AEnemy, AEnemy::StaticClass, TEXT("AEnemy"), &Z_Registration_Info_UClass_AEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemy), 3027231569U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_Enemy_h_3778565911(TEXT("/Script/jCareerProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_Enemy_h_2965313631(TEXT("/Script/jCareerProject"),
 		Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_Enemy_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_Enemy_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

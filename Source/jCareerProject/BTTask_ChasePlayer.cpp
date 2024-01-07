@@ -6,7 +6,8 @@
 #include "BehaviorTree/BlackboardComponent.h"
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 
-UBTTask_ChasePlayer::UBTTask_ChasePlayer(FObjectInitializer const& ObjectInitializer)
+UBTTask_ChasePlayer::UBTTask_ChasePlayer(FObjectInitializer const& ObjectInitializer) :
+	UBTTask_BlackboardBase(ObjectInitializer)
 {
 	NodeName = TEXT("Chase Player");
 }
@@ -24,6 +25,6 @@ EBTNodeResult::Type UBTTask_ChasePlayer::ExecuteTask(UBehaviorTreeComponent& Own
 		FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
 		return EBTNodeResult::Succeeded;
 	}
-	//Fail
+	//Failed
 	return EBTNodeResult::Failed;
 }

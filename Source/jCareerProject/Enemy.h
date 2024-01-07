@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "PathForEnemy.h"
 #include "GameFramework/Character.h"
 #include <BehaviorTree/BehaviorTree.h>
 #include "Enemy.generated.h"
@@ -24,10 +25,16 @@ public:
 
 	UBehaviorTree* GetBehaviorTree() const;
 
+	APathForEnemy* GetPatrolPath() const;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI", meta=(AllowPrivateAccess = "true"))
+private:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI", meta = (AllowPrivateAccess = "true"))
 	UBehaviorTree* Tree;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI", meta = (AllowPrivateAccess = "true"))
+	APathForEnemy* PatrolPath;
 };
