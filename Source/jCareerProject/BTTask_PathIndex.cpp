@@ -6,8 +6,7 @@
 #include "Enemy_AIController.h"
 #include "BehaviorTree/BlackboardComponent.h"
 
-UBTTask_PathIndex::UBTTask_PathIndex(FObjectInitializer const& ObjectInitializer) :
-	UBTTask_BlackboardBase(ObjectInitializer)
+UBTTask_PathIndex::UBTTask_PathIndex(FObjectInitializer const& ObjectInitializer)
 {
 	NodeName = TEXT("Path Index");
 }

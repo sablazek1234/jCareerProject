@@ -6,8 +6,7 @@
 #include <NavigationSystem.h>
 #include "BehaviorTree/BlackboardComponent.h"
 
-UBTTask_LocationFinder::UBTTask_LocationFinder(FObjectInitializer const& ObjectInitializer) :
-	UBTTask_BlackboardBase(ObjectInitializer)
+UBTTask_LocationFinder::UBTTask_LocationFinder(FObjectInitializer const& ObjectInitializer)
 {
 	NodeName = "Find Random Location";
 }
