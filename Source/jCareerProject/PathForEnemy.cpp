@@ -12,11 +12,13 @@ APathForEnemy::APathForEnemy()
 
 FVector APathForEnemy::GetPatrolPoint(int const index) const
 {
-    return PathPoints[index];
+	return PathPoints[index];
 }
 
 int APathForEnemy::Num() const
 {
-    return PathPoints.Num();
+	return PathPoints.Num();
 }
+
+
 
