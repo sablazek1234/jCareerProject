@@ -6,7 +6,8 @@
 #include "Enemy_AIController.h"
 #include "BehaviorTree/BlackboardComponent.h"
 
-UBTTask_FindPathPoint::UBTTask_FindPathPoint(FObjectInitializer const& ObjectInitializer)
+UBTTask_FindPathPoint::UBTTask_FindPathPoint(FObjectInitializer const& ObjectInitializer) :
+	UBTTask_BlackboardBase{ ObjectInitializer }
 {
 	NodeName = TEXT("Find Path");
 }

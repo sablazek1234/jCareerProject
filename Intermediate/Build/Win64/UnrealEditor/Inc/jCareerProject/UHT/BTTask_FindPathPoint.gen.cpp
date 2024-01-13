@@ -56,12 +56,11 @@ void EmptyLinkFunctionForGeneratedCodeBTTask_FindPathPoint() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBTTask_FindPathPoint_Statics::NewProp_PatrolPathKey_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
-		{ "Category", "AI" },
-		{ "MakeEditWidget", "true" },
+		{ "Category", "Blackboard" },
 		{ "ModuleRelativePath", "BTTask_FindPathPoint.h" },
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UBTTask_FindPathPoint_Statics::NewProp_PatrolPathKey = { "PatrolPathKey", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBTTask_FindPathPoint, PatrolPathKey), Z_Construct_UScriptStruct_FBlackboardKeySelector, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UBTTask_FindPathPoint_Statics::NewProp_PatrolPathKey_MetaData), Z_Construct_UClass_UBTTask_FindPathPoint_Statics::NewProp_PatrolPathKey_MetaData) }; // 3137324432
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UBTTask_FindPathPoint_Statics::NewProp_PatrolPathKey = { "PatrolPathKey", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBTTask_FindPathPoint, PatrolPathKey), Z_Construct_UScriptStruct_FBlackboardKeySelector, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UBTTask_FindPathPoint_Statics::NewProp_PatrolPathKey_MetaData), Z_Construct_UClass_UBTTask_FindPathPoint_Statics::NewProp_PatrolPathKey_MetaData) }; // 3137324432
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UBTTask_FindPathPoint_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBTTask_FindPathPoint_Statics::NewProp_PatrolPathKey,
 	};
@@ -103,9 +102,9 @@ void EmptyLinkFunctionForGeneratedCodeBTTask_FindPathPoint() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_BTTask_FindPathPoint_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UBTTask_FindPathPoint, UBTTask_FindPathPoint::StaticClass, TEXT("UBTTask_FindPathPoint"), &Z_Registration_Info_UClass_UBTTask_FindPathPoint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBTTask_FindPathPoint), 3488723368U) },
+		{ Z_Construct_UClass_UBTTask_FindPathPoint, UBTTask_FindPathPoint::StaticClass, TEXT("UBTTask_FindPathPoint"), &Z_Registration_Info_UClass_UBTTask_FindPathPoint, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBTTask_FindPathPoint), 3810002318U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_BTTask_FindPathPoint_h_3809317325(TEXT("/Script/jCareerProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_BTTask_FindPathPoint_h_1456089572(TEXT("/Script/jCareerProject"),
 		Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_BTTask_FindPathPoint_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_BTTask_FindPathPoint_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

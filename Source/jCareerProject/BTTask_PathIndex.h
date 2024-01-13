@@ -23,8 +23,7 @@ private:
 
 	DirectionType Direction = DirectionType::Forward;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI", meta = (MakeEditWidget = "true",
-		AllowPrivateAccess = "true"))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI", meta = (AllowPrivateAccess = "true"))
 	bool Directions = false;
 	
 };

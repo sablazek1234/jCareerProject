@@ -42,3 +42,17 @@ APathForEnemy* AEnemy::GetPatrolPath() const
 	return PatrolPath;
 }
 
+UAnimMontage* AEnemy::GetMontage() const
+{
+	return nullptr;
+}
+
+int AEnemy::MeleeAttack_Implementation()
+{
+	if (Montage)
+	{
+		PlayAnimMontage(Montage);
+	}
+	return 0;
+}
+

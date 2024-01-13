@@ -10,6 +10,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodejCareerProjectCharacter() {}
 // Cross Module References
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
@@ -33,14 +34,6 @@ void EmptyLinkFunctionForGeneratedCodejCareerProjectCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_CameraBoom_MetaData[];
-#endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_FollowCamera_MetaData[];
-#endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
-#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_DefaultMappingContext_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_DefaultMappingContext;
@@ -56,6 +49,22 @@ void EmptyLinkFunctionForGeneratedCodejCareerProjectCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_LookAction_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Attack_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Attack;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CameraBoom_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_FollowCamera_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Montage_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_Montage;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -72,36 +81,6 @@ void EmptyLinkFunctionForGeneratedCodejCareerProjectCharacter() {}
 		{ "ModuleRelativePath", "jCareerProjectCharacter.h" },
 	};
 #endif
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_CameraBoom_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
-		{ "Category", "Camera" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "/** Camera boom positioning the camera behind the character */" },
-#endif
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "jCareerProjectCharacter.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Camera boom positioning the camera behind the character" },
-#endif
-	};
-#endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_CameraBoom = { "CameraBoom", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AjCareerProjectCharacter, CameraBoom), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_CameraBoom_MetaData), Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_CameraBoom_MetaData) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_FollowCamera_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
-		{ "Category", "Camera" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "/** Follow camera */" },
-#endif
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "jCareerProjectCharacter.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Follow camera" },
-#endif
-	};
-#endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_FollowCamera = { "FollowCamera", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AjCareerProjectCharacter, FollowCamera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_FollowCamera_MetaData), Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_FollowCamera_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_DefaultMappingContext_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
@@ -158,13 +137,73 @@ void EmptyLinkFunctionForGeneratedCodejCareerProjectCharacter() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AjCareerProjectCharacter, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_LookAction_MetaData), Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_LookAction_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_Attack_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Input" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Attack Input\n" },
+#endif
+		{ "ModuleRelativePath", "jCareerProjectCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Attack Input" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_Attack = { "Attack", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AjCareerProjectCharacter, Attack), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_Attack_MetaData), Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_Attack_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_CameraBoom_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Camera" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Camera boom positioning the camera behind the character */" },
+#endif
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "jCareerProjectCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Camera boom positioning the camera behind the character" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_CameraBoom = { "CameraBoom", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AjCareerProjectCharacter, CameraBoom), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_CameraBoom_MetaData), Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_CameraBoom_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_FollowCamera_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Camera" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Follow camera */" },
+#endif
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "jCareerProjectCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Follow camera" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_FollowCamera = { "FollowCamera", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AjCareerProjectCharacter, FollowCamera), Z_Construct_UClass_UCameraComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_FollowCamera_MetaData), Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_FollowCamera_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_Montage_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Animation" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Animation\n" },
+#endif
+		{ "ModuleRelativePath", "jCareerProjectCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Animation" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_Montage = { "Montage", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AjCareerProjectCharacter, Montage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_Montage_MetaData), Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_Montage_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AjCareerProjectCharacter_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_CameraBoom,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_FollowCamera,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_DefaultMappingContext,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_JumpAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_MoveAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_LookAction,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_Attack,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_CameraBoom,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_FollowCamera,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AjCareerProjectCharacter_Statics::NewProp_Montage,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AjCareerProjectCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AjCareerProjectCharacter>::IsAbstract,
@@ -204,9 +243,9 @@ void EmptyLinkFunctionForGeneratedCodejCareerProjectCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_jCareerProjectCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AjCareerProjectCharacter, AjCareerProjectCharacter::StaticClass, TEXT("AjCareerProjectCharacter"), &Z_Registration_Info_UClass_AjCareerProjectCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AjCareerProjectCharacter), 1829685060U) },
+		{ Z_Construct_UClass_AjCareerProjectCharacter, AjCareerProjectCharacter::StaticClass, TEXT("AjCareerProjectCharacter"), &Z_Registration_Info_UClass_AjCareerProjectCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AjCareerProjectCharacter), 183432761U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_jCareerProjectCharacter_h_1799549827(TEXT("/Script/jCareerProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_jCareerProjectCharacter_h_457887387(TEXT("/Script/jCareerProject"),
 		Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_jCareerProjectCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_jCareerProjectCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

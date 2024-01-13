@@ -21,6 +21,6 @@ public:
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI", meta = (MakeEditWidget = "true", 
 		AllowPrivateAccess = "true"))
-		TArray<FVector> PathPoints;
+	TArray<FVector> PathPoints;
 
 };

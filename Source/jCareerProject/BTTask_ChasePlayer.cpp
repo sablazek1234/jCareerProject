@@ -13,6 +13,7 @@ UBTTask_ChasePlayer::UBTTask_ChasePlayer(FObjectInitializer const& ObjectInitial
 
 EBTNodeResult::Type UBTTask_ChasePlayer::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
+	//Get AI Controller
 	if (auto* const cont = Cast<AEnemy_AIController>(OwnerComp.GetAIOwner()))
 	{
 		auto const PlayerLocation = OwnerComp.GetBlackboardComponent()->GetValueAsVector(GetSelectedBlackboardKey());

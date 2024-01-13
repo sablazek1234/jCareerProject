@@ -6,7 +6,8 @@
 #include "Enemy_AIController.h"
 #include "BehaviorTree/BlackboardComponent.h"
 
-UBTTask_PathIndex::UBTTask_PathIndex(FObjectInitializer const& ObjectInitializer)
+UBTTask_PathIndex::UBTTask_PathIndex(FObjectInitializer const& ObjectInitializer) :
+	UBTTask_BlackboardBase{ ObjectInitializer }
 {
 	NodeName = TEXT("Path Index");
 }
@@ -31,7 +32,7 @@ EBTNodeResult::Type UBTTask_PathIndex::ExecuteTask(UBehaviorTreeComponent& Owner
 					{
 						Direction = DirectionType::Backwards;
 					}
-					else if (Index >= MaxIndex && Direction == DirectionType::Backwards)
+					else if (Index == MinIndex && Direction == DirectionType::Backwards)
 					{
 						Direction = DirectionType::Forward;
 					}

@@ -11,7 +11,8 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
 #include "Perception/AIPerceptionStimuliSourceComponent.h"
-#include <Perception/AISense_Sight.h>
+#include "Perception/AISense_Sight.h"
+#include "Animation/AnimMontage.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -83,6 +84,15 @@ void AjCareerProjectCharacter::SetupSimulusSource()
 	}
 }
 
+//If the "Attack" button is pressed, play the punching animation
+void AjCareerProjectCharacter::OnAttack()
+{
+	if (Montage)
+	{
+		PlayAnimMontage(Montage);
+	}
+}
+
 //////////////////////////////////////////////////////////////////////////
 // Input
 
@@ -100,6 +110,9 @@ void AjCareerProjectCharacter::SetupPlayerInputComponent(UInputComponent* Player
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AjCareerProjectCharacter::Look);
+
+		//Attacking
+		EnhancedInputComponent->BindAction(Attack, ETriggerEvent::Triggered, this, &AjCareerProjectCharacter::OnAttack);
 	}
 	else
 	{

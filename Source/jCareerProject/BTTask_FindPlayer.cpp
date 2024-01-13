@@ -7,7 +7,8 @@
 #include "GameFramework/Character.h"
 #include "Kismet/GameplayStatics.h"
 
-UBTTask_FindPlayer::UBTTask_FindPlayer(FObjectInitializer const& ObjectInitializer)
+UBTTask_FindPlayer::UBTTask_FindPlayer(FObjectInitializer const& ObjectInitializer) :
+	UBTTask_BlackboardBase{ ObjectInitializer }
 {
 	NodeName = TEXT("Find Player");
 }
@@ -18,7 +19,7 @@ EBTNodeResult::Type UBTTask_FindPlayer::ExecuteTask(UBehaviorTreeComponent& Owne
 	{
 		auto const PlayerLocation = Player->GetActorLocation();
 		
-		//Go to any random location
+		//Find player location
 		if (SearchRandom)
 		{
 			FNavLocation Loc;
@@ -28,12 +29,15 @@ EBTNodeResult::Type UBTTask_FindPlayer::ExecuteTask(UBehaviorTreeComponent& Owne
 				if (NavSys->GetRandomPointInNavigableRadius(PlayerLocation, SearchRadius, Loc))
 				{
 					OwnerComp.GetBlackboardComponent()->SetValueAsVector(GetSelectedBlackboardKey(), Loc.Location);
+
+					//Succeed
 					FinishLatentTask(OwnerComp, EBTNodeResult::Succeeded);
 					return EBTNodeResult::Succeeded;
 				}
 			}
 		}
 		
+		//Go back to patrolling
 		else
 		{
 			OwnerComp.GetBlackboardComponent()->SetValueAsVector(GetSelectedBlackboardKey(), PlayerLocation);
@@ -41,6 +45,6 @@ EBTNodeResult::Type UBTTask_FindPlayer::ExecuteTask(UBehaviorTreeComponent& Owne
 			return EBTNodeResult::Succeeded;
 		}
 	}
-	
+	//Failed
 	return EBTNodeResult::Failed;
 }

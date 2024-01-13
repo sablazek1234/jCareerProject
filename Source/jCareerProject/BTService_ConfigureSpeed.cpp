@@ -14,11 +14,13 @@ UBTService_ConfigureSpeed::UBTService_ConfigureSpeed()
 
 void UBTService_ConfigureSpeed::OnBecomeRelevant(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
+	Super::OnBecomeRelevant(OwnerComp, NodeMemory);
+
 	if (auto const cont = OwnerComp.GetAIOwner())
 	{
-		if (auto const* Enemy = Cast<AEnemy>(cont->GetPawn()))
+		if (auto* const Enemy = Cast<AEnemy>(cont->GetPawn()))
 		{
-			Enemy->GetCharacterMovement()->MaxWalkSpeed = speed;
+			Enemy->GetCharacterMovement()->MaxWalkSpeed = Speed;
 		}
 	}
 }

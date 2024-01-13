@@ -43,6 +43,12 @@
     <ClInclude Include="..\..\Source\jCareerProject\BTService_ConfigureSpeed.h">
       <Filter>Source\jCareerProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\jCareerProject\BTService_MeleeRange.cpp">
+      <Filter>Source\jCareerProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\jCareerProject\BTService_MeleeRange.h">
+      <Filter>Source\jCareerProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\jCareerProject\BTTask_ChasePlayer.cpp">
       <Filter>Source\jCareerProject</Filter>
     </ClCompile>
@@ -67,10 +73,22 @@
     <ClInclude Include="..\..\Source\jCareerProject\BTTask_LocationFinder.h">
       <Filter>Source\jCareerProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\jCareerProject\BTTask_MeleeAttack.cpp">
+      <Filter>Source\jCareerProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\jCareerProject\BTTask_MeleeAttack.h">
+      <Filter>Source\jCareerProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\jCareerProject\BTTask_PathIndex.cpp">
       <Filter>Source\jCareerProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\jCareerProject\BTTask_PathIndex.h">
+      <Filter>Source\jCareerProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\jCareerProject\CombatInterface.cpp">
+      <Filter>Source\jCareerProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\jCareerProject\CombatInterface.h">
       <Filter>Source\jCareerProject</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\jCareerProject\Enemy.cpp">

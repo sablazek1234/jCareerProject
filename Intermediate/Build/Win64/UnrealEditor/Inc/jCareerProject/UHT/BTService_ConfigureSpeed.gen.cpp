@@ -29,9 +29,9 @@ void EmptyLinkFunctionForGeneratedCodeBTService_ConfigureSpeed() {}
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_speed_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Speed_MetaData[];
 #endif
-		static const UECodeGen_Private::FFloatPropertyParams NewProp_speed;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_Speed;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -51,16 +51,15 @@ void EmptyLinkFunctionForGeneratedCodeBTService_ConfigureSpeed() {}
 	};
 #endif
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBTService_ConfigureSpeed_Statics::NewProp_speed_MetaData[] = {
-		{ "AllowPrivateAccess", "true" },
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UBTService_ConfigureSpeed_Statics::NewProp_Speed_MetaData[] = {
+		{ "AllowPrivateAccess", "yes" },
 		{ "Category", "AI" },
-		{ "MakeEditWidget", "true" },
 		{ "ModuleRelativePath", "BTService_ConfigureSpeed.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UBTService_ConfigureSpeed_Statics::NewProp_speed = { "speed", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBTService_ConfigureSpeed, speed), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UBTService_ConfigureSpeed_Statics::NewProp_speed_MetaData), Z_Construct_UClass_UBTService_ConfigureSpeed_Statics::NewProp_speed_MetaData) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UBTService_ConfigureSpeed_Statics::NewProp_Speed = { "Speed", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UBTService_ConfigureSpeed, Speed), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UBTService_ConfigureSpeed_Statics::NewProp_Speed_MetaData), Z_Construct_UClass_UBTService_ConfigureSpeed_Statics::NewProp_Speed_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UBTService_ConfigureSpeed_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBTService_ConfigureSpeed_Statics::NewProp_speed,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UBTService_ConfigureSpeed_Statics::NewProp_Speed,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UBTService_ConfigureSpeed_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UBTService_ConfigureSpeed>::IsAbstract,
@@ -100,9 +99,9 @@ void EmptyLinkFunctionForGeneratedCodeBTService_ConfigureSpeed() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_BTService_ConfigureSpeed_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UBTService_ConfigureSpeed, UBTService_ConfigureSpeed::StaticClass, TEXT("UBTService_ConfigureSpeed"), &Z_Registration_Info_UClass_UBTService_ConfigureSpeed, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBTService_ConfigureSpeed), 3353179501U) },
+		{ Z_Construct_UClass_UBTService_ConfigureSpeed, UBTService_ConfigureSpeed::StaticClass, TEXT("UBTService_ConfigureSpeed"), &Z_Registration_Info_UClass_UBTService_ConfigureSpeed, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UBTService_ConfigureSpeed), 552966493U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_BTService_ConfigureSpeed_h_2639236311(TEXT("/Script/jCareerProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_BTService_ConfigureSpeed_h_745674866(TEXT("/Script/jCareerProject"),
 		Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_BTService_ConfigureSpeed_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_BTService_ConfigureSpeed_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
