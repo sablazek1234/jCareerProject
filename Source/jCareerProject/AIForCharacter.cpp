@@ -82,3 +82,15 @@ void AAIForCharacter::SetHealth(float const NewHealth)
 	Health = NewHealth;
 }
 
+void AAIForCharacter::AttackStart() const
+{
+	RightHandHitBox->SetCollisionProfileName("Fist");
+	RightHandHitBox->SetNotifyRigidBodyCollision(true);
+}
+
+void AAIForCharacter::AttackEnd() const
+{
+	RightHandHitBox->SetCollisionProfileName("Fist");
+	RightHandHitBox->SetNotifyRigidBodyCollision(false);
+}
+

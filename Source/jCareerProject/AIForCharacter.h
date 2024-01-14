@@ -24,6 +24,8 @@ public:
 	float GetHealth() const;
 	float GetMaxHealth() const;
 	void SetHealth(float const NewHealth);
+	void AttackStart() const;
+	void AttackEnd() const;
 
 protected:
 	// Called when the game starts or when spawned

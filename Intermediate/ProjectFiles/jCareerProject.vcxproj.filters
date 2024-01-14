@@ -43,6 +43,12 @@
     <ClInclude Include="..\..\Source\jCareerProject\AIForCharacter.h">
       <Filter>Source\jCareerProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\jCareerProject\AttackAnimNotifyState.cpp">
+      <Filter>Source\jCareerProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\jCareerProject\AttackAnimNotifyState.h">
+      <Filter>Source\jCareerProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\jCareerProject\BTService_ConfigureSpeed.cpp">
       <Filter>Source\jCareerProject</Filter>
     </ClCompile>
