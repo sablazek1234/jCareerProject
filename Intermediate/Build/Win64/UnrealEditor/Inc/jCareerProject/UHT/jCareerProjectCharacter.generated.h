@@ -24,7 +24,7 @@ private: \
 	static void StaticRegisterNativesAjCareerProjectCharacter(); \
 	friend struct Z_Construct_UClass_AjCareerProjectCharacter_Statics; \
 public: \
-	DECLARE_CLASS(AjCareerProjectCharacter, ACharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/jCareerProject"), NO_API) \
+	DECLARE_CLASS(AjCareerProjectCharacter, AAIForCharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/jCareerProject"), NO_API) \
 	DECLARE_SERIALIZER(AjCareerProjectCharacter)
 
 

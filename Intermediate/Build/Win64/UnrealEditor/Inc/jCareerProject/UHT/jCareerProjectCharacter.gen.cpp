@@ -9,12 +9,12 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodejCareerProjectCharacter() {}
 // Cross Module References
-	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
+	JCAREERPROJECT_API UClass* Z_Construct_UClass_AAIForCharacter();
 	JCAREERPROJECT_API UClass* Z_Construct_UClass_AjCareerProjectCharacter();
 	JCAREERPROJECT_API UClass* Z_Construct_UClass_AjCareerProjectCharacter_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_jCareerProject();
@@ -70,7 +70,7 @@ void EmptyLinkFunctionForGeneratedCodejCareerProjectCharacter() {}
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
 	UObject* (*const Z_Construct_UClass_AjCareerProjectCharacter_Statics::DependentSingletons[])() = {
-		(UObject* (*)())Z_Construct_UClass_ACharacter,
+		(UObject* (*)())Z_Construct_UClass_AAIForCharacter,
 		(UObject* (*)())Z_Construct_UPackage__Script_jCareerProject,
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AjCareerProjectCharacter_Statics::DependentSingletons) < 16);
@@ -243,9 +243,9 @@ void EmptyLinkFunctionForGeneratedCodejCareerProjectCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_jCareerProjectCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AjCareerProjectCharacter, AjCareerProjectCharacter::StaticClass, TEXT("AjCareerProjectCharacter"), &Z_Registration_Info_UClass_AjCareerProjectCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AjCareerProjectCharacter), 183432761U) },
+		{ Z_Construct_UClass_AjCareerProjectCharacter, AjCareerProjectCharacter::StaticClass, TEXT("AjCareerProjectCharacter"), &Z_Registration_Info_UClass_AjCareerProjectCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AjCareerProjectCharacter), 70315510U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_jCareerProjectCharacter_h_457887387(TEXT("/Script/jCareerProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_jCareerProjectCharacter_h_4162439900(TEXT("/Script/jCareerProject"),
 		Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_jCareerProjectCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_jCareerProjectCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

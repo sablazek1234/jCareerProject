@@ -16,7 +16,7 @@ class JCAREERPROJECT_API UBTService_MeleeRange : public UBTService_BlackboardBas
 	
 public:
 	UBTService_MeleeRange();
-	void OnBecomeRelavant(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
+	void OnBecomeRelevant(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 
 private:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI", meta = (AllowPrivateAccess = "true"))

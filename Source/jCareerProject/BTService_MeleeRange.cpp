@@ -15,7 +15,7 @@ UBTService_MeleeRange::UBTService_MeleeRange()
 	NodeName = TEXT("In Melee Range?");
 }
 
-void UBTService_MeleeRange::OnBecomeRelavant(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
+void UBTService_MeleeRange::OnBecomeRelevant(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
 	//Get Enemy and Enemy Controller
 	auto const* const cont = Cast<AEnemy_AIController>(OwnerComp.GetAIOwner());

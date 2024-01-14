@@ -5,13 +5,14 @@
 #include "CoreMinimal.h"
 #include "PathForEnemy.h"
 #include "BehaviorTree/BehaviorTree.h"
+#include "AIForCharacter.h"
 #include "GameFramework/Character.h"
 #include "CombatInterface.h"
 #include "Animation/AnimMontage.h"
 #include "Enemy.generated.h"
 
 UCLASS()
-class JCAREERPROJECT_API AEnemy : public ACharacter, public ICombatInterface
+class JCAREERPROJECT_API AEnemy : public AAIForCharacter, public ICombatInterface
 {
 	GENERATED_BODY()
 

@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/Character.h"
+#include "AIForCharacter.h"
 #include "Animation/AnimMontage.h"
 #include "jCareerProjectCharacter.generated.h"
 
@@ -16,7 +16,7 @@ struct FInputActionValue;
 DECLARE_LOG_CATEGORY_EXTERN(LogTemplateCharacter, Log, All);
 
 UCLASS(config=Game)
-class AjCareerProjectCharacter : public ACharacter
+class AjCareerProjectCharacter : public AAIForCharacter
 {
 	GENERATED_BODY()
 	

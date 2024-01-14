@@ -37,6 +37,12 @@
     <Filter Include="Source\jCareerProject">
       <UniqueIdentifier>{634C5114-DFF7-3421-81BF-9B3AC98132F5}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\jCareerProject\AIForCharacter.cpp">
+      <Filter>Source\jCareerProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\jCareerProject\AIForCharacter.h">
+      <Filter>Source\jCareerProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\jCareerProject\BTService_ConfigureSpeed.cpp">
       <Filter>Source\jCareerProject</Filter>
     </ClCompile>
@@ -128,6 +134,12 @@
       <Filter>Source\jCareerProject</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\jCareerProject\PathForEnemy.h">
+      <Filter>Source\jCareerProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\jCareerProject\Widget_HealthBar.cpp">
+      <Filter>Source\jCareerProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\jCareerProject\Widget_HealthBar.h">
       <Filter>Source\jCareerProject</Filter>
     </ClInclude>
   </ItemGroup>
