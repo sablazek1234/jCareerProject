@@ -40,4 +40,20 @@ private:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Collision", meta = (AllowPrivateAccess = "true"))
 	class UBoxComponent* RightHandHitBox;
+
+	UFUNCTION()
+	void OnAttackOverlapStart(
+		UPrimitiveComponent* const OverlappedComp,
+		AActor* const OtherActor,
+		UPrimitiveComponent* const OtherComp,
+		int const OtherBodyIndex,
+		bool const FromPunch,
+		FHitResult const& PunchResult);
+
+	UFUNCTION()
+	void OnAttackOverlapEnd(
+		UPrimitiveComponent* const OverlappedComp,
+		AActor* const OtherActor,
+		UPrimitiveComponent* const OtherComp,
+		int const OtherBodyIndex);
 };

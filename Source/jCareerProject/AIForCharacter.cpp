@@ -2,6 +2,8 @@
 
 
 #include "AIForCharacter.h"
+#include "Enemy.h"
+#include "jCareerProjectCharacter.h"
 #include "Widget_HealthBar.h"
 #include "Components/WidgetComponent.h"
 #include "Components/BoxComponent.h"
@@ -45,7 +47,44 @@ AAIForCharacter::AAIForCharacter() :
 void AAIForCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+	RightHandHitBox->OnComponentBeginOverlap.AddDynamic(this, &AAIForCharacter::OnAttackOverlapStart);
+	RightHandHitBox->OnComponentEndOverlap.AddDynamic(this, &AAIForCharacter::OnAttackOverlapEnd);
 	
+}
+
+void AAIForCharacter::OnAttackOverlapStart(
+	UPrimitiveComponent* const OverlappedComp, 
+	AActor* const OtherActor, 
+	UPrimitiveComponent* const OtherComp, 
+	int const OtherBodyIndex, 
+	bool const FromPunch, 
+	FHitResult const& PunchResult)
+{
+	if (OtherActor == this)
+	{
+		return;
+	}
+	
+	if (auto const Enemy = Cast<AEnemy>(OtherActor))
+	{
+		auto const NewHealth = Enemy->GetHealth() - Enemy->GetMaxHealth() * 0.1f;
+		Enemy->SetHealth(NewHealth);
+	}
+
+	else if (auto const Player = Cast<AjCareerProjectCharacter>(OtherActor))
+	{
+		auto const NewHealth = Player->GetHealth() - Player->GetMaxHealth() * 0.07f;
+		Player->SetHealth(NewHealth);
+	}
+}
+
+void AAIForCharacter::OnAttackOverlapEnd(
+	UPrimitiveComponent* const OverlappedComp, 
+	AActor* const OtherActor, 
+	UPrimitiveComponent* const OtherComp, 
+	int const OtherBodyIndex)
+{
+
 }
 
 // Called every frame
@@ -80,6 +119,25 @@ float AAIForCharacter::GetMaxHealth() const
 void AAIForCharacter::SetHealth(float const NewHealth)
 {
 	Health = NewHealth;
+
+	//Game Over (Lose)
+	if (Cast<AjCareerProjectCharacter>(this))
+	{
+		if (Health <= 0)
+		{
+			UE_LOG(LogTemp, Error, TEXT("Get Rekt!!"));
+			GetWorld()->GetFirstLocalPlayerFromController()->ConsoleCommand("Exit");
+		}
+	}
+	//Game Over (Win)
+	else if (Cast<AEnemy>(this))
+	{
+		if (Health <= 0)
+		{
+			UE_LOG(LogTemp, Error, TEXT("You won everything in life!!"));
+			GetWorld()->GetFirstLocalPlayerFromController()->ConsoleCommand("Exit");
+		}
+	}
 }
 
 void AAIForCharacter::AttackStart() const
