@@ -125,7 +125,7 @@ void AAIForCharacter::SetHealth(float const NewHealth)
 	{
 		if (Health <= 0)
 		{
-			UE_LOG(LogTemp, Error, TEXT("Get Rekt!!"));
+			UE_LOG(LogTemp, Error, TEXT("You lost!! Really!?"));
 			GetWorld()->GetFirstLocalPlayerFromController()->ConsoleCommand("Exit");
 		}
 	}

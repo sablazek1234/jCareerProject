@@ -136,6 +136,12 @@
     <ClInclude Include="..\..\Source\jCareerProject\jCareerProjectGameMode.h">
       <Filter>Source\jCareerProject</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\jCareerProject\MusicComponent.cpp">
+      <Filter>Source\jCareerProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\jCareerProject\MusicComponent.h">
+      <Filter>Source\jCareerProject</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\jCareerProject\PathForEnemy.cpp">
       <Filter>Source\jCareerProject</Filter>
     </ClCompile>
