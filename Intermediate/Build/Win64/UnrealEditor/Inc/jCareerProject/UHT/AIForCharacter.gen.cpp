@@ -17,7 +17,6 @@ void EmptyLinkFunctionForGeneratedCodeAIForCharacter() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	JCAREERPROJECT_API UClass* Z_Construct_UClass_AAIForCharacter();
 	JCAREERPROJECT_API UClass* Z_Construct_UClass_AAIForCharacter_NoRegister();
-	UMG_API UClass* Z_Construct_UClass_UWidgetComponent_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_jCareerProject();
 // End Cross Module References
 	DEFINE_FUNCTION(AAIForCharacter::execOnAttackOverlapEnd)
@@ -255,10 +254,6 @@ void EmptyLinkFunctionForGeneratedCodeAIForCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_WidgetComp_MetaData[];
-#endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_WidgetComp;
-#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_RightHandHitBox_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_RightHandHitBox;
@@ -284,13 +279,6 @@ void EmptyLinkFunctionForGeneratedCodeAIForCharacter() {}
 	};
 #endif
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAIForCharacter_Statics::NewProp_WidgetComp_MetaData[] = {
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "AIForCharacter.h" },
-	};
-#endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAIForCharacter_Statics::NewProp_WidgetComp = { "WidgetComp", nullptr, (EPropertyFlags)0x0040000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAIForCharacter, WidgetComp), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAIForCharacter_Statics::NewProp_WidgetComp_MetaData), Z_Construct_UClass_AAIForCharacter_Statics::NewProp_WidgetComp_MetaData) };
-#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAIForCharacter_Statics::NewProp_RightHandHitBox_MetaData[] = {
 		{ "AllowPrivateAccess", "true" },
 		{ "Category", "Collision" },
@@ -300,7 +288,6 @@ void EmptyLinkFunctionForGeneratedCodeAIForCharacter() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAIForCharacter_Statics::NewProp_RightHandHitBox = { "RightHandHitBox", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAIForCharacter, RightHandHitBox), Z_Construct_UClass_UBoxComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAIForCharacter_Statics::NewProp_RightHandHitBox_MetaData), Z_Construct_UClass_AAIForCharacter_Statics::NewProp_RightHandHitBox_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAIForCharacter_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAIForCharacter_Statics::NewProp_WidgetComp,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAIForCharacter_Statics::NewProp_RightHandHitBox,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AAIForCharacter_Statics::StaticCppClassTypeInfo = {
@@ -341,9 +328,9 @@ void EmptyLinkFunctionForGeneratedCodeAIForCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_AIForCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AAIForCharacter, AAIForCharacter::StaticClass, TEXT("AAIForCharacter"), &Z_Registration_Info_UClass_AAIForCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAIForCharacter), 2888722948U) },
+		{ Z_Construct_UClass_AAIForCharacter, AAIForCharacter::StaticClass, TEXT("AAIForCharacter"), &Z_Registration_Info_UClass_AAIForCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAIForCharacter), 4229313597U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_AIForCharacter_h_3043360647(TEXT("/Script/jCareerProject"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_AIForCharacter_h_2855869796(TEXT("/Script/jCareerProject"),
 		Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_AIForCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Dustin_Documents_Unreal_Projects_jCareerProject_Source_jCareerProject_AIForCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -32,7 +32,6 @@ protected:
 	virtual void BeginPlay() override;
 
 private:
-	UPROPERTY()
 	class UWidgetComponent* WidgetComp;
 	
 	float const MaxHealth{ 100.f };

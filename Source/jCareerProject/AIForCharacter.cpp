@@ -5,8 +5,8 @@
 #include "Enemy.h"
 #include "jCareerProjectCharacter.h"
 #include "Widget_HealthBar.h"
-#include "Components/WidgetComponent.h"
 #include "Components/BoxComponent.h"
+#include "Components/WidgetComponent.h"
 #include "../../Intermediate/ProjectFiles/Consts.h"
 
 // Sets default values
@@ -46,10 +46,12 @@ AAIForCharacter::AAIForCharacter() :
 // Called when the game starts or when spawned
 void AAIForCharacter::BeginPlay()
 {
+	if (RightHandHitBox)
+	{
+		RightHandHitBox->OnComponentBeginOverlap.AddDynamic(this, &AAIForCharacter::OnAttackOverlapStart);
+		RightHandHitBox->OnComponentEndOverlap.AddDynamic(this, &AAIForCharacter::OnAttackOverlapEnd);
+	}
 	Super::BeginPlay();
-	RightHandHitBox->OnComponentBeginOverlap.AddDynamic(this, &AAIForCharacter::OnAttackOverlapStart);
-	RightHandHitBox->OnComponentEndOverlap.AddDynamic(this, &AAIForCharacter::OnAttackOverlapEnd);
-	
 }
 
 void AAIForCharacter::OnAttackOverlapStart(
