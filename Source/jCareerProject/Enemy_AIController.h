@@ -23,7 +23,6 @@ protected:
 
 private:
 	class UAISenseConfig_Sight* SightConfig;
-
 	void SetupPerceptionSystem();
 
 	UFUNCTION()

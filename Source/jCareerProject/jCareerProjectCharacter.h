@@ -73,7 +73,7 @@ private:
 	UCameraComponent* FollowCamera;
 
 	//Animation
-	UPROPERTY(EditAnywhere, BluePrintReadWrite, Category = "Animation", meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Animation", meta = (AllowPrivateAccess = "true"))
 	UAnimMontage* Montage;
 
 	//Set up Stimulus
